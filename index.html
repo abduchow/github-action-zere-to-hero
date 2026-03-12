@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .plan-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .plan-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .plan-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+            color: #764ba2;
+            margin: 15px 0;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 20px 0;
+            color: #555;
+        }
+        
+        .features li {
+            list-style: none;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        
+        button:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Plan</h1>
+        <div class="plans">
+            <div class="plan-card">
+                <h2>Basic</h2>
+                <div class="price">$9<span style="font-size: 16px;">/month</span></div>
+                <ul class="features">
+                    <li>✓ 10 GB Storage</li>
+                    <li>✓ Email Support</li>
+                    <li>✓ Basic Analytics</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+            
+            <div class="plan-card">
+                <h2>Professional</h2>
+                <div class="price">$29<span style="font-size: 16px;">/month</span></div>
+                <ul class="features">
+                    <li>✓ 100 GB Storage</li>
+                    <li>✓ Priority Support</li>
+                    <li>✓ Advanced Analytics</li>
+                    <li>✓ Custom Domain</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+            
+            <div class="plan-card">
+                <h2>Enterprise</h2>
+                <div class="price">$99<span style="font-size: 16px;">/month</span></div>
+                <ul class="features">
+                    <li>✓ Unlimited Storage</li>
+                    <li>✓ 24/7 Phone Support</li>
+                    <li>✓ Custom Analytics</li>
+                    <li>✓ API Access</li>
+                    <li>✓ Dedicated Manager</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
