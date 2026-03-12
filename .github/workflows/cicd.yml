@@ -7,22 +7,22 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: checkout code
-        run: echo "Code from github"  
-    
-  build:
+        run: echo "Code from github" 
+        
+   build:
     runs-on: ubuntu-22.04
     steps:
       - name: Build docker container
-        run: echo "Docker containe build"  
-    
-  test:
+        run: echo "Docker containe build"
+        
+   test:
     runs-on: ubuntu-22.04
     steps:
       - name: Test the container
-        run: echo "Test the container"  
+        run: echo "Test the container"
   
-  deployment: 
+   deployment: 
     runs-on: ubuntu-22.04
     steps:
       - name: Deploying the app
-        run: echo "Deploying the app"  
+        run: echo "Deploying the app" 
