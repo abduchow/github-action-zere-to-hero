@@ -10,18 +10,21 @@ jobs:
         run: echo "Code from github" 
         
    build:
+    needs: code
     runs-on: ubuntu-22.04
     steps:
       - name: Build docker container
         run: echo "Docker containe build"
         
    test:
+    needs: build
     runs-on: ubuntu-22.04
     steps:
       - name: Test the container
         run: echo "Test the container"
   
-   deployment: 
+   deployment:
+    needs: [build,test]
     runs-on: ubuntu-22.04
     steps:
       - name: Deploying the app
