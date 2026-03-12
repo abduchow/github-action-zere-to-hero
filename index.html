@@ -1,31 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Zakat Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdulla Chowdhury | DevOps Engineer</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h2>Zakat Calculator</h2>
+<header>
+<h1>Abdulla Chowdhury</h1>
+<p>DevOps Engineer | Okta Administrator | Cloud Automation</p>
+</header>
 
-<form method="POST">
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 
-Cash: <input type="number" name="cash" step="0.01"><br><br>
+<section id="about">
+<h2>About Me</h2>
+<p>
+DevOps Engineer with 12+ years experience in Identity & Access Management,
+Cloud Infrastructure, and Automation. Experienced in Okta, Kubernetes,
+Ansible, AWS, Terraform, and CI/CD pipelines.
+</p>
+</section>
 
-Bank Balance: <input type="number" name="bank" step="0.01"><br><br>
+<section id="skills">
+<h2>Skills</h2>
 
-Gold Value: <input type="number" name="gold" step="0.01"><br><br>
+<ul>
+<li>AWS / Cloud Infrastructure</li>
+<li>Kubernetes / Docker</li>
+<li>Jenkins / CI-CD</li>
+<li>Terraform / Infrastructure as Code</li>
+<li>Ansible Automation</li>
+<li>Okta Identity & Access Management</li>
+<li>Python / Java</li>
+</ul>
 
-Investments: <input type="number" name="investments" step="0.01"><br><br>
+</section>
 
-Debts: <input type="number" name="debts" step="0.01"><br><br>
+<section id="projects">
 
-<button type="submit">Calculate Zakat</button>
+<h2>Projects</h2>
 
-</form>
+<div class="project">
+<h3>DevOps Automation Framework</h3>
+<p>Built automation pipelines for infrastructure deployment using
+Terraform, Jenkins and Ansible.</p>
+</div>
 
-{% if zakat is not none %}
-<h3>Your Zakat: ${{ zakat }}</h3>
-{% endif %}
+<div class="project">
+<h3>Kubernetes Cluster Deployment</h3>
+<p>Designed and deployed production Kubernetes clusters with monitoring
+and security compliance.</p>
+</div>
+
+<div class="project">
+<h3>Okta IAM Automation</h3>
+<p>Automated Okta user provisioning, SSO integration and MFA workflows.</p>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: abdulla@email.com</p>
+<p>LinkedIn: linkedin.com/in/abdulla</p>
+<p>GitHub: github.com/abdulla</p>
+</section>
+
+<footer>
+<p>© 2026 Abdulla Chowdhury</p>
+</footer>
 
 </body>
 </html>
