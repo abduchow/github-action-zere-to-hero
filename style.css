@@ -1,0 +1,45 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#222;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+nav{
+background:#444;
+text-align:center;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+}
+
+section{
+padding:40px;
+max-width:900px;
+margin:auto;
+}
+
+.project{
+background:white;
+padding:20px;
+margin:15px 0;
+border-radius:5px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#222;
+color:white;
+}
