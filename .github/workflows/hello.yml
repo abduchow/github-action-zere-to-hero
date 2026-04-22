@@ -9,7 +9,7 @@ jobs:
   greet:
     runs-on: ubuntu-22.04
     steps:
-      - name: say hello to users
+      - name: say Hello to users
         run: echo "hello Friends"
       - name: say hello to username
         run: echo "Hello $USER"
