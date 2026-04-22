@@ -3,8 +3,7 @@ name: Hello Workflow testing
 on: 
  push:
    branches: [main]
-   paths:
-     - '**.html'
+
 jobs:
   greet:
     runs-on: ubuntu-22.04
@@ -17,7 +16,7 @@ jobs:
   details:
     runs-on: ubuntu-latest
     steps:
-      - name: show all version of python and docker
+      - name: Show all version of python and Docker 
         run: docker --version && python --version
 
 
