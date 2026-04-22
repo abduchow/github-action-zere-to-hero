@@ -1,5 +1,5 @@
 ---
-name: Hello workflow
+name: Hello Workflow testing
 on: 
  push:
    branches: [main]
